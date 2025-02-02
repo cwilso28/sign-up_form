@@ -21,8 +21,27 @@ body {
   height: 100%;
   width: 1400px;
   background-color: white;
+  
 }
 
 #image-banner {
+  display: flex;
+  flex-direction: column;
   flex: 0 0 33%;
+  background-image: url("resources/halie-west-unsplash-ferns.jpg");
+  background-size: auto 100%;
+  background-position: center;
+
+}
+
+#image-banner > p {
+  display: flex;
+  color: white;
+  background-color: rgba(0 0 0 / 75%);
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 20em;
+  height: 6em;
+  width: 100%;
 }
