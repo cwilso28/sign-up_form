@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "norse";
+  src: url("resources/Norse-Bold.otf") format("opentype");
+}
+
 * {
   border: 1px solid black;
   box-sizing:border-box;
@@ -31,17 +36,39 @@ body {
   background-image: url("resources/halie-west-unsplash-ferns.jpg");
   background-size: auto 100%;
   background-position: center;
-
 }
 
-#image-banner > p {
+#image-banner > p:first-child {
   display: flex;
   color: white;
   background-color: rgba(0 0 0 / 75%);
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 20em;
-  height: 6em;
+  top: 300px;
+  height: 120px;
   width: 100%;
+  font-family: 'norse', serif;
+  font-size: 4em;
+}
+
+/* #image-banner > p + p {
+  display: flex;
+  position: relative;
+  bottom: 0;
+} */
+
+.footer {
+  display: block;
+  position: relative;
+  /* bottom: 2px; */
+  margin-top: auto;
+  margin-bottom: 5px;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+#image-banner a {
+  color: white;
 }
