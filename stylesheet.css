@@ -114,4 +114,16 @@ body {
   margin-bottom: 1em;
 }
 
+#submission-section > *{
+  margin-left: 75px;
+}
+
+#submission-section > *:first-child {
+  margin-top: 50px;
+}
+
+#submission-section p {
+  margin-top: 10px;
+}
+
 
