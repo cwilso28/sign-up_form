@@ -3,8 +3,13 @@
   src: url("resources/Norse-Bold.otf") format("opentype");
 }
 
+:root {
+  --hero: 300px;
+  --form: calc(100vh - calc(2*var(--hero)));
+}
+
 * {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   box-sizing:border-box;
   margin: 0;
   padding: 0;
@@ -72,3 +77,20 @@ body {
 #image-banner a {
   color: white;
 }
+
+#form-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#hero-section,
+#submission-section {
+  height: var(--hero);
+}
+
+#form-section {
+  height: var(--form);
+}
+
+
