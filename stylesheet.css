@@ -159,6 +159,9 @@ input {
   width: 15em;
   font-size: 1.1em;
   padding-left: 0.3em;
+  border: 1px solid rgb(153, 153, 153);
+  outline:none;
+  border-radius: 3px;
 }
 
 #form-section > * {
@@ -190,4 +193,11 @@ label {
   color: rgb(73, 73, 73);
 }
 
-input:focus {}
+input:focus {
+  border: 2px solid rgb(47, 47, 255);
+  box-shadow: 3px 3px 3px gray;
+}
+
+input:invalid {
+  border: 2px solid rgb(255, 0, 0);
+}

@@ -38,17 +38,17 @@
 
           <div class="input-container">
             <label for="phone_number">PHONE NUMBER</label>
-            <input type="tel" id="phone_number" name="phone_number"/>
+            <input type="tel" id="phone_number" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"/>
           </div>
 
           <div class="input-container">
             <label for="pwd">PASSWORD</label>
-            <input type="password" id="pwd" name="pwd"/>
+            <input type="password" id="pwd" name="pwd" required />
           </div>
 
           <div class="input-container">
             <label for="conf_pwd">CONFIRM PASSWORD</label>
-            <input type="password" id="conf_pwd" name="conf_pwd"/>
+            <input type="password" id="conf_pwd" name="conf_pwd" required/>
           </div>
         </div>
 
