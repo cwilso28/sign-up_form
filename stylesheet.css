@@ -101,7 +101,8 @@ body {
   box-shadow: inset 0px 5px 5px rgb(206, 206, 206);
 }
 
-#hero-section p {
+#hero-section p,
+#form-section p {
   font-size: 1.5em;
   font-weight: bold;
   margin-left: 75px;
@@ -152,3 +153,41 @@ label, input {
   display: flex;
   flex-direction: column;
 }
+
+input {
+  height: 1.7em;
+  width: 15em;
+  font-size: 1.1em;
+  padding-left: 0.3em;
+}
+
+#form-section > * {
+  margin-left: 75px;
+}
+
+#form-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#inputs {
+  display:flex;
+  flex-direction: row;
+  /* flex: 0 0 100%; */
+  width: 75%;
+  flex-flow: wrap;
+}
+
+#form-section,
+#inputs {
+  gap: 20px 60px;
+}
+
+label {
+  font-size: .75em;
+  font-weight: 600;
+  color: rgb(73, 73, 73);
+}
+
+input:focus {}
